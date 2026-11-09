@@ -1,0 +1,1100 @@
+﻿**You:**
+
+期末專題提案作業規範
+Final Project Proposal Requirements
+一、作業目的與基本要求
+
+本期末專題旨在訓練學生完成一個從問題發現、資料蒐集、領域研究、AI 分析、系統設計，到實作與驗證的完整專案。專題應以真實世界問題為核心，原則上採用：
+
+AI Agent + Domain Knowledge + Data Analytics + Real-World Application
+
+學生不應只訓練一個 AI Model 或製作單純 Chatbot，而應設計一個具有特定專業能力的 Domain AI Agent（領域智慧代理人），能夠理解使用者需求、取得與分析資料、結合領域知識進行推理，最後提供有依據的結果、預測、診斷或建議。
+
+例如：AI Plant Doctor、Energy Detective、Warehouse Manager、Factory Doctor、Financial Analyst、Architect Assistant、Pet Life Analyst 等。
+
+二、Final Project Proposal（10%）
+
+Proposal 為期末專題第一階段，占成績 10%，須完成以下四部分：
+
+1. Abstract 摘要
+
+摘要應形成完整的研究故事，建議採用以下 A–F 六段式結構：
+
+A. Attention Getter — Motivation
+以具體證據說明「為什麼這個問題現在很重要、創新或有趣」。應優先尋找 2025–2026 的研究論文、政府/產業報告、統計資料、公開資料集、科技新聞或真實案例，不應只寫「近年來 AI 快速發展」。
+
+B. But — Challenge
+指出現有技術、應用或研究仍存在的問題、限制與 Research Gap。
+
+C. Cure — Proposed Solution
+清楚說明：「為了解決上述問題，本專題提出一個新的 ______ AI Agent / System。」
+
+D. Development — Method
+簡述系統如何整合 AI、資料來源、分析方法及 Domain Knowledge。
+
+E. Experiments — Evaluation
+說明預計使用的 Dataset、Case Study、Baseline、Evaluation Metrics 或使用者測試。
+
+F. Findings — Expected Outcomes
+Proposal 尚未完成實驗者應寫 Expected Findings / Expected Outcomes，不得虛構實驗結果。
+
+Abstract Story：Attention Getter → But → Cure → Development → Experiments → Findings
+
+2. Introduction 緒論
+
+Introduction 必須回答：Why is this project worth doing?
+
+建議使用 A–F 結構：
+
+**A. Attention Getter：**以公開數據、研究、報告或案例引題。
+**B. Background：**說明應用領域、使用者及技術背景。
+**C. Problem：**明確定義真正需要解決的問題。
+**D. Existing Limitations：**說明目前方法的不足與挑戰。
+**E. Innovation：**說明你的方法與既有系統有何不同。
+**F. Contributions：**條列本專題預期的主要技術與應用貢獻。
+
+Introduction 中的重要論述應盡可能有客觀證據與來源支持。
+
+3. Related Work 相關研究
+
+Related Work 應同時涵蓋：
+
+約 1/2 AI Technology + 1/2 Domain Know-how
+
+例如「AI Plant Doctor」不能只研究 CNN、Transformer、LLM，也必須研究植物病害、環境因子、土壤濕度、農業感測器及相關農業資料。
+
+可使用 Perplexity、Connected Papers、NotebookLM、Google Scholar、GitHub、Udemy 等工具協助研究，但學生必須確認原始來源及內容正確性。
+
+Proposal 必須包含 Article Summary Table：
+
+Ref.  Year  Problem  AI Method  Domain Knowledge  Dataset  Findings  Limitation
+[1]  2025  …  …  …  …  …  …
+[2]  2026  …  …  …  …  …  …
+
+最後必須歸納：
+
+Existing Research → Limitations → Research Gap → Our Project
+
+三、Deep Research：三大核心問題
+
+每組必須針對自己的專業領域進行深入研究，回答：
+
+Q1. 五個核心思維模式
+
+這個領域的專家普遍認同的五個核心思維模式是什麼？
+
+每一項須說明其意義、證據，以及如何影響系統設計。
+
+Q2. 三個最重要的專業爭論
+
+這個領域專家爭論最激烈的三個問題是什麼？雙方最有力的證據是什麼？目前共識是什麼？還有哪些問題尚未解決？
+
+建議結構：
+
+觀點 A ↔⁠ 觀點 B → Evidence → Consensus → Unresolved Problems
+
+Q3. 十個深度理解問題
+
+設計 10 個問題，用來判斷一個人是真正深入了解這個領域，還是只有死記硬背。
+
+問題應包含 Why、What-if、Trade-off、Failure Case、Evidence、Comparison、Design Decision、Real-world Scenario 等推理層次。
+
+四、Proposed Scheme / Proposed Design
+
+Proposed Scheme 是本 Proposal 最重要的技術內容，必須將專題設計成可實作的 AI Agent System。
+
+基本架構可參考：
+
+① User/Application Scenario
+→ ② Query/Input
+→ ③ Planner & Reasoning Agent
+→ ④ Data Acquisition/Retrieval
+→ ⑤ Analytics Engine
+→ ⑥ Domain Knowledge Integration
+→ ⑦ Decision/Recommendation
+→ ⑧ Output & Interaction
+
+資料來源可以包含 IoT Sensor、Database、CSV/Excel、API、Web、Open Data、PDF/Paper、Knowledge Base、Vector DB 等。
+
+Proposal 必須提供以下三種技術表示
+
+1. System Architecture
+必須有完整架構圖，各主要模組以 ①②③… 編號，並在正文逐一說明。
+
+2. Flowchart
+呈現 Input → Processing → AI/Analytics → Decision → Output 的完整處理流程；必要時加入 Decision、Loop、Exception 或 Human Interaction。
+
+3. Pseudocode
+核心演算法必須提供具有行號的 Pseudocode，例如：
+
+Algorithm 1: Domain AI Agent
+Input : User Query Q
+Output: Domain-specific Result R
+
+01: Receive user query Q
+02: Analyze intent and requirements
+03: Decompose Q into subtasks
+04: Select appropriate data sources and tools
+05: Retrieve and preprocess relevant data
+06: Analyze data using AI/ML methods
+07: Integrate results with domain knowledge
+08: Generate candidate solutions
+09: Evaluate evidence, uncertainty, and limitations
+10: Generate final recommendation R
+11: Present results and supporting evidence
+12: return R
+五、AI 使用規範
+AI is OK — 可以使用 AI
+
+本專題允許並鼓勵合理使用 AI。可使用 ChatGPT、Claude、Gemini、NotebookLM、Perplexity、Connected Papers、GitHub Copilot、Codex 等工具進行：
+
+Research、Literature Review、Coding、Debugging、Architecture、Data Analysis、Pseudocode、Documentation、PPT 等工作。
+
+但基本原則為：
+
+AI 可以幫你完成工作，但你必須能解釋它做了什麼、為什麼這樣設計，以及如何驗證結果。
+
+教師可針對 Architecture、DESIGN.md、論文、資料、程式碼與實驗結果進行口頭提問。
+
+六、繳交要求與 Final Handover
+A. Proposal 階段
+
+須提交：
+
+① Proposal Document：Abstract、Introduction、Related Work、Deep Research、Proposed Scheme、References。
+② Proposal PPT：完整呈現研究動機、文獻、Research Gap、Agent Design、Architecture、Flowchart、Pseudocode。
+③ GitHub Repository：建立正式專題 Repository。
+④ DESIGN.md：從 Proposal 階段開始建立並持續維護系統設計文件。
+
+B. Final Project 最終交付
+
+期末須完成完整 Final Handover Package：
+
+必繳項目  最低要求
+GitHub  完整 Source Code、資料/資料來源、執行與測試方式
+README.md  專題介紹、Installation、How to Run、Demo
+DESIGN.md  Architecture、Components、Data Flow、AI Model、Domain Knowledge、Algorithm、Implementation Mapping、Results、Limitations
+Final PPT  超過 20 頁（>20 pages）
+Final Video  YouTube 專題簡報與 Demo，超過 10 分鐘（>10 min）
+Experiments  Dataset、Evaluation Metrics、Results、Comparison
+Conclusion  Contributions、Limitations、Future Work
+
+DESIGN.md 必須使其他人能了解：
+
+Problem → Requirements → Architecture → Components → Data → AI/Analytics → Domain Knowledge → Algorithm → Implementation → How to Run → Results
+
+Final Handover 的標準不是只有「程式可以跑」，而是：
+
+即使原開發者不在，下一位開發者仍能透過 GitHub + README.md + DESIGN.md 理解、執行、驗證並繼續開發此專題。
+
+七、Proposal 評分（10%）
+
+評分項目  比例
+Introduction：重要性、動機、Evidence、Innovation  20%
+Related Work：AI + Domain + Article Summary  20%
+Deep Research：5 Mindsets + 3 Controversies + 10 Questions  20%
+Proposed AI Agent + System Architecture  20%
+Flowchart + Pseudocode + Technical Feasibility  15%
+GitHub + DESIGN.md + 完整度  5%
+Total  100%
+
+核心評量原則
+
+不要只做一個 Model，也不要只做一個 Chatbot。
+請設計一個懂領域、會取得資料、會分析、會推理、能提供有用結果，而且能用客觀證據驗證的 Domain AI Agent。
+
+完整專題故事：
+
+Public Evidence → Important Problem → AI + Domain Research → Deep Understanding → Research Gap → Proposed AI Agent → Architecture / Flowchart / Pseudocode → Implementation → Experiments → Final Handover
+
+
+
+
+
+
+如果我要做一個剩餘車位預測相關的你覺得如何
+
+* * *
+
+**ChatGPT:**
+
+我覺得**「剩餘車位預測（Parking Availability Prediction）」很適合拿來做你的期末專題，而且有機會做成一個完整的 Domain AI Agent，而不只是訓練一個預測模型。**
+
+尤其你的專題屬於「碩班－物聯網」方向，這個題目可以自然結合 IoT、時間序列預測、資料分析、GIS 地圖、AI Agent 與智慧城市應用，也能設計出實際可操作的 Demo。
+
+不過，我會建議你不要只做「預測停車場剩餘幾個車位」，而是進一步設計成：
+
+Smart Parking AI Agent
+
+智慧停車剩餘車位預測與決策輔助系統
+
+![Cleverciti Systems — CIVIC](https://images.openai.com/static-rsc-4/hINNujgG-_IsbebV95wqCBxbUfBY959xfeYBp-rs0ETImWVspiUWzg2FE_0fa4t2_HSvXErA36K6t-ZtYgutgwH_qSDElk33PRVk2an3GkiLKsFZopoDVDRscIi7v84keuHr71IF1qPWXNLJQ9owjv5UOnTIf4QifLvW5Z0XNVY?purpose=inline)
+![ASUS IoTサイト｜ASUS IoT｜ASUS 日本](https://images.openai.com/static-rsc-4/H4Cx1NxTM3116qbxJn8YdDdvyxhHsR3C2o-BYt5PMcSJ7uuJRfzuwFP6EsCCn80IqDat9hwh9q74ah0itmd5m-5vffGc5KlHzIALUAiOs4rOyTYQzq2FiRQ6vkSukuBQWG_cHsQt9w0-dvim4FUyZZ1TFS8pYkkVU0_jNzmtj1E?purpose=inline)
+![Predictive Parking](https://images.openai.com/static-rsc-4/2_Yrbwtjy8gWiSok06eWXXD0ojTn4ZOHXhw1rKBuaNz-W_ot0fmQutSB45stEKlIlY3CrpTGyzCzYu_VNzgga4tcZT8c4XWHpsDFOKaQ4CWNnRsnoiRS_qWVcyAbH-0eSBabpKO8mdNDao2OXL7penYOHFPRW2NvahQ8NjRPJaQ?purpose=inline)
+
+13
+
+核心概念是：使用者輸入目的地與預計抵達時間，系統根據歷史停車資料、即時車位資訊、時間與其他環境因素，預測抵達時可能剩餘的車位，並提供有資料依據的停車建議。
+
+例如：
+
+「我晚上 7 點要去台中逢甲夜市，附近哪個停車場最有可能有空位？」
+
+系統不只是搜尋停車場，而是要能夠：
+
+1. 取得附近停車場的即時與歷史資料。
+2. 預測各停車場 30 分鐘、60 分鐘後的剩餘車位。
+3. 分析星期幾、時段、天氣及歷史使用率的影響。
+4. 綜合車位可用性、距離與停車費，排序推薦停車場。
+5. 解釋推薦原因，並標示預測的不確定性。
+
+這樣才符合老師要求的 AI Agent + Domain Knowledge + Data Analytics + Real-World Application。
+
+一、這個題目為什麼值得做？
+
+我查了一下，目前台灣有可利用的政府開放資料，而且 2025–2026 年仍有停車占用率預測相關研究，代表這不是只能做概念展示的題目。
+資料.gov.tw
++2
+
+1. 有真實資料可以使用
+
+臺中市政府提供公有停車場剩餘車位資訊，也有路邊停車格動態資料；後者的政府資料集標示更新頻率為每 10 分鐘。
+資料.gov.tw
++1
+
+資料入口：臺中市路外剩餘車位 · 臺中市路邊剩餘車位
+
+2. 有明確的 AI 預測問題
+
+可以預測未來 30 分鐘、60 分鐘的剩餘車位數，並比較不同模型的準確度，而不是只把目前的車位資料顯示在地圖上。
+
+3. 有實際應用價值
+
+駕駛人可以提前選擇較有機會停進去的停車場；管理者也可以分析熱門時段、滿位風險與區域停車需求。
+
+4. 容易設計客觀實驗
+
+可以用 MAE、RMSE、預測滿位的 Precision／Recall 等指標，比較基準模型、傳統機器學習與時間序列模型。
+
+但有一個很重要的技術風險
+
+有即時車位 API，不代表已經有足夠的歷史資料可以訓練預測模型。
+
+例如政府 API 目前回傳剩餘車位，但未必直接提供過去數月的完整時間序列。因此，你需要確認歷史資料是否可下載；如果沒有，就要及早開始定期擷取 API，將每次的車位數與時間戳記保存到自己的資料庫。
+
+這會直接影響你能否做出真正的「預測」，而不只是查詢目前車位。
+
+二、我建議的專題定位
+
+我會把研究範圍定在臺中市公有路外停車場的剩餘車位預測，先不把所有路邊停車格都納入第一版。
+
+原因是路外停車場通常有明確的總車位數，可以將剩餘車位數轉換成占用率，較容易建立預測標籤與比較不同停車場的使用情況。
+
+建議研究題目
+
+基於多源資料分析與領域知識推理之智慧停車 AI Agent：以臺中市剩餘車位預測為例
+
+英文：A Smart Parking AI Agent Based on Multi-source Data Analytics and Domain Knowledge Reasoning: A Case Study of Parking Availability Prediction in Taichung City
+
+核心研究問題
+
+1. 能否利用歷史車位變化與時間特徵，準確預測未來 30／60 分鐘的剩餘車位？
+2. 加入天氣、星期、假日等外部特徵，是否能改善預測表現？
+3. AI Agent 能否將預測結果、停車費率、距離與滿位風險整合成有依據的推薦？
+
+這個定位同時包含了 AI、資料分析、領域知識與應用系統，也保留了可以透過實驗驗證的研究問題。
+
+三、系統應該怎麼設計？
+
+我建議將系統拆成八個模組，這樣可以直接對應老師要求的 System Architecture、Flowchart 與 Pseudocode。
+
+① User Interface & GIS Map
+
+輸入目的地、預計抵達時間、停車偏好
+
+② Planner & Reasoning Agent
+
+理解需求、拆解任務、選擇資料與分析工具
+
+③ Data Acquisition
+
+政府 API、歷史資料、天氣、停車費率
+
+④ Data Processing
+
+清理缺失值、時間對齊、特徵工程
+
+⑤ AI Analytics & Prediction Engine
+
+預測未來車位數、占用率及滿位機率
+
+⑥ Domain Knowledge & Decision Engine
+
+結合容量、費率、距離、滿位風險與使用者偏好
+
+⑦ Recommendation & Explanation Agent
+
+排序停車場、說明推薦理由、呈現預測信心
+
+⑧ Results Dashboard
+
+地圖、預測曲線、推薦清單、資料時間與風險提示
+
+這裡最重要的區分是：AI 預測模型負責估算未來車位；Agent 負責決定要查什麼資料、使用哪種分析工具，以及如何依據使用者需求提出建議。 不需要把所有功能都交給大型語言模型。
+
+四、AI 模型要用什麼？
+
+建議先以容易解釋、容易比較的模型開始，再視資料量決定是否使用深度學習。
+
+模型  用途  在專題中的角色
+Historical Average  同星期、同時段的平均車位  基準模型
+Linear Regression  預測未來剩餘車位數  可解釋的基準模型
+Random Forest  學習時間、歷史車位與外部因素的非線性關係  主要候選模型
+XGBoost  分析多種特徵與複雜交互作用  主要候選模型
+LSTM  學習較長的時間序列變化  資料充足時再評估
+
+2025 年一篇停車占用率研究使用可解釋的統計模型分析停車行為，也指出簡單模型在特定規律場景中具有實用價值。另一篇多源資料研究則比較了 LSTM、Transformer 等模型。這表示你不必預設深度學習一定最好，而應透過實驗選擇合適的方法。
+Springer Nature Link
++1
+
+建議預測的目標
+
+主要目標：
+
+- 未來 30 分鐘剩餘車位數。
+- 未來 60 分鐘剩餘車位數。
+- 未來 30／60 分鐘達到滿位狀態的機率。
+
+評估方式：
+
+- MAE、RMSE：預測車位數與實際車位數相差多少。
+- Precision、Recall、F1-score：判斷是否能正確預警滿位風險。
+- Baseline comparison：確認 AI 是否真的優於歷史平均等簡單方法。
+
+訓練與測試資料應依時間切分，不能把未來資料洩漏到訓練階段。
+
+五、真正的研究缺口可以怎麼寫？
+
+不要直接宣稱「目前沒有智慧停車預測系統」，因為既有研究已涵蓋停車占用率預測、多源資料分析與可解釋模型。
+ScienceDirect
++1
+
+比較有機會成立的研究方向是：
+
+Research Gap：如何將在地停車資料、短期車位預測、領域限制與個人化決策整合為可驗證的 AI Agent？
+
+可以從三個面向研究：
+
+1. 在地資料適應性： 評估模型能否利用臺中市公開資料預測不同停車場的需求。
+2. 多目標決策： 不只預測車位，還考慮距離、費率與滿位風險。
+3. 可解釋的 Agent： 提供可追溯的資料來源、預測結果及推薦理由，而不是只給出一個答案。
+
+以上是建議驗證的研究缺口，是否確實構成相對於既有文獻的創新，仍須透過完整的 Related Work 比較來確認。
+
+六、我最在意的可行性問題
+
+正式定案前，建議先完成一個小型資料驗證實驗。
+
+1. 確認 API 是否真的提供可用的剩餘車位數。 臺中市政府開放資料頁面列有停車場位置、總車位及滿車率燈號等欄位；若需要精確車位數，還應確認 TDX 或其他即時 API 的回傳欄位。
+資料.gov.tw
++1
+2. 確認能否取得歷史資料。 如果沒有歷史紀錄，就建立定期擷取流程，將停車場 ID、擷取時間、剩餘車位、總容量等資料持續存檔。
+3. 確認資料品質與預測價值。 檢查更新中斷、缺失值、車位數異常，以及不同停車場是否有足夠的變化可供學習。
+
+如果資料驗證結果不理想，也可以用具有歷史占用率資料的公開研究資料集先完成模型比較，再把臺中市 API 用於即時展示；但必須清楚區分模型實驗資料與實際部署資料。
+
+七、我的最終建議
+
+我會推薦你做這個題目，但把第一版控制在合理範圍內：
+
+- 應用範圍： 臺中市公有路外停車場。
+- 預測範圍： 未來 30／60 分鐘。
+- AI 技術： Historical Average、Random Forest、XGBoost。
+- Domain Knowledge： 車位容量、歷史需求、營業時間、費率、距離與滿位風險。
+- Agent 能力： 查詢資料、選擇分析工具、整合預測結果、推薦停車場並解釋原因。
+- 系統呈現： GIS 地圖、即時車位、未來預測曲線、推薦排序。
+- 驗證方式： 時間序列測試集、MAE／RMSE、滿位風險分類指標，以及推薦結果比較。
+
+下一步應該先確認資料，而不是先寫程式或訓練模型。 只要能建立足夠可靠的歷史車位時間序列，這個題目就有機會發展成完整的期末研究與可展示的系統。
+
+* * *
+
+**You:**
+
+所以你建議先從台中市公有路邊停車格以外的停車場開始做嗎
+
+* * *
+
+**ChatGPT:**
+
+對，我會建議你第一階段先做「臺中市公有路外停車場」，也就是一般所說的公有停車場，不是路邊畫設的停車格。
+
+但這不是因為路邊停車格不能做，而是兩者的資料特性不同。以你這次碩班期末專題的要求來看，先從路外停車場開始，比較容易完成預測模型、AI Agent 與實驗驗證。
+
+兩種停車場的比較
+![臺中市政府財政局-民參列管案件簡介-臺中市福星路停86福星立體停車場興建營運](https://images.openai.com/static-rsc-4/YiUPeVaHdaA03gVK1BhbaaiK_7-FAddxVWvyrlR_13WkcBmTOhWfY3J6E-zIboKBUWU_cotn9NWGEBd_HuVxPAJV2A0cCYGh6C3UpZzVwaUYokFSInBCgYdc2d2h9zb0s7E5fFT6YCcVDYV0XxbRnqNPJ3aDwp-1FBaJNFeMsBk?purpose=inline)
+
+A. 公有路外停車場（推薦先做）
+第一階段首選
+
+- 有明確的停車場名稱、位置與總車位數。
+- 可用剩餘車位計算占用率。
+- 適合建立單一停車場或多停車場的預測模型。
+- 可以進一步整合費率、距離與滿位風險，推薦最佳停車場。
+
+主要挑戰：必須確認即時剩餘車位資料的更新頻率，以及能否取得足夠的歷史紀錄。
+
+![中市樹木全面盤點 林市長：市府優先移植危險黑板樹－臺中觀光旅遊網 Taichung Tourism](https://images.openai.com/static-rsc-4/YSpYxPB-FuZEXx10l8ZAME1GghGacHvlm94N63p0u5mBEfqInJh7mVCwHlrM6rLJhE_yS-2LbMf8-eGLne6oBDhSo-DHDg1zW7thKVsduQ_F8LCjqqlxLspXbgGxSRbd3sZ9TKMURGdYcJeszmRH8Nqu43HEPa2vfm5Xc3_uMmk?purpose=inline)
+
+B. 公有路邊停車格
+
+可作為第二階段擴充
+
+- 更貼近駕駛人尋找路邊空位的真實需求。
+- 可以研究不同路段、時段與天氣對停車需求的影響。
+- 適合延伸到路段級的空位預測與 GIS 熱區分析。
+
+主要挑戰：車格數量多、空位狀態可能變動快，而且必須確認資料是否能辨識每個車格的實際占用狀態。
+
+我建議的實作順序
+
+1. 先做公有路外停車場。 取得即時剩餘車位，建立歷史資料庫。
+2. 建立預測模型。 比較歷史平均、Random Forest 與 XGBoost，預測未來 30／60 分鐘的剩餘車位。
+3. 加入 AI Agent。 讓使用者輸入目的地、抵達時間與預算，由系統整合預測結果、距離及費率來推薦停車場。
+4. 有餘力再加入路邊停車格。 將系統擴充為路外停車場與路邊車格的混合推薦。
+
+另外，有一件事比選擇哪一類停車場更重要：你能不能取得足夠的歷史車位資料。 即時 API 有資料，不代表它提供歷史紀錄；如果需要自行累積資料，就要盡早開始。
+
+我會建議你先確認這件事，再正式定題。
+
+你希望這個專題最後主要幫助哪一種使用者？
+
+[ ]
+尋找附近公有停車場，預測抵達時還剩多少車位。
+[ ]
+尋找路邊停車格，預測附近哪個路段比較容易找到空位。
+[x]
+兩種都想做，希望整合成完整的智慧停車系統。
+依照我的方向評估可行性
+
+* * *
+
+**You:**
+
+那私有停車場呢 例如Time 跟嘟嘟房之類的
+
+* * *
+
+**ChatGPT:**
+
+可以，而且我覺得把 Times（台灣大車隊旗下的城市停車服務）與嘟嘟房這類民營停車場納入研究，反而更貼近一般駕駛人的實際需求。
+
+不過，從碩班期末專題的角度，我會把「私有停車場」視為很值得研究的資料來源，但不會一開始就假設它們一定比公有停車場更好做。
+
+因為這個專題真正的難點不是停車場屬於公營還是民營，而是：能否取得足夠、持續且可用的剩餘車位資料，讓預測模型有真實資料可以訓練與驗證。
+
+一、公有 vs. 民營停車場
+![俥亭停車](https://images.openai.com/static-rsc-4/eG1jR77QQB47DMnSgCehsQp_JeyUlcE9TTkramATy3w77tDJTJ7g02R8j8Xm9AP0fHa5obn65V3nK6ccramTnlkmJ11d8sKsSH2KJG_nIeYRdn_0SKofXSpXZPMJFXDqpnE9Mp_1PFiykoyskaBHmO7Fvsxe126JKtWsD9fLTcY?purpose=inline)
+
+公有路外停車場
+
+- 優點：政府開放資料較容易查找，適合建立研究原型。
+- 缺點：不同資料集的更新頻率、欄位及歷史資料完整度可能不同。
+- 適合：先驗證預測模型與整體系統架構。
+
+![新場開幕-最新消息-Times 停車場｜全台最大停車場經營管理公司 | 台灣普客二四股份有限公司](https://images.openai.com/static-rsc-4/nmbPGXWC-Wzqp4av9jlRTdAKis6pz6kt6AiWPJ3Np7lDcsQnrpSak3q2LOI9H_wpUO-6CbshFaZSxa3Swj16Po1rBz-j6YaAJYenHR7QMtTwufpwKkAluJ5RQzlyQ7-xIVzInoYdFZNCjoiQ9EHvTiRegdS9pOvJSQy-lk37d-g?purpose=inline)
+
+民營停車場，例如 Times
+
+- 優點：可以研究商業停車場的需求變化與停車選擇。
+- 缺點：是否有公開即時車位 API、歷史資料或授權介面，需要個別確認。
+- 適合：在取得可靠資料後，進一步建立跨業者的停車推薦系統。
+
+![「這縣市」嘟嘟房停車千萬發票沒人領！113年7、8月統一發票號碼領獎期限將至 | 地球黃金線](https://images.openai.com/static-rsc-4/J0_RczpGAns2kZ2l3Wi1RmnaYW-HFHApEk-W_NznLeKSqSKqYv31YoAmNnKle-tUpv10XlJMVOp3lAOeTHDYn3Z_rWX1lgdR_MGOZkZVntGPcrhhd6f7mDgZs2cvB9f__muRCPRzRPLJSKEdI2iIyfan12PdXzAebGV8EipKOlI?purpose=inline)
+
+民營停車場，例如嘟嘟房
+
+- 優點：可以納入不同地點、容量與收費條件的停車場。
+- 缺點：要確認剩餘車位是否公開、更新頻率及歷史紀錄能否取得。
+- 適合：擴充停車場涵蓋範圍，驗證模型跨停車場的泛化能力。
+
+二、其實臺中市已經有機會整合公營與民營停車場
+
+我查到一個很值得注意的資料來源：臺中市停車管理處的官方網站指出，「臺中交通網 APP」提供公、民營停車場及路邊車格資訊，包含周邊停車場清單與即時剩餘車位。
+臺中市停車資訊網
++1
+
+另外，政府也有提供臺中市民營路外停車場總表，包含停車場名稱、行政區、收費資訊、收費時段與車格數。
+資料.gov.tw
+
+你可以先看這三個官方入口：
+
+- 臺中市停車管理處
+- 臺中市民營路外停車場總表
+- 臺中市路外剩餘車位資料
+
+要注意的是，民營停車場總表主要是基本資料，不等於所有民營停車場都有公開即時車位 API；公有路外剩餘車位資料也有其涵蓋範圍限制。因此，還需要確認 Times、嘟嘟房等業者的即時資料是否能合法、穩定地取得，以及是否能保存歷史紀錄。
+
+三、如果是我，我會這樣規劃你的專題
+
+Smart Parking AI Agent
+
+整合公有、民營停車場與路邊車格的智慧停車決策系統
+
+Phase 1：整合資料
+
+先納入可取得即時車位的公有停車場與民營停車場，建立統一資料格式；其他停車場先呈現位置、費率與容量。
+
+Phase 2：建立預測模型
+
+累積車位時間序列，預測未來 30／60 分鐘的剩餘車位，並比較不同模型的表現。
+
+Phase 3：建立 AI Agent
+
+依照目的地、抵達時間、停車費與距離，分析並推薦適合的停車場，附上預測依據與資料更新時間。
+
+例如使用者輸入：
+
+「我晚上 7 點要去臺中勤美誠品，希望停車費每小時不超過 40 元，走路不要超過 10 分鐘。」
+
+系統可以比較周邊公有停車場、Times、嘟嘟房等候選地點，估計抵達時的空位機率，並依照預算與步行距離排序。
+
+如果某個停車場沒有即時或歷史資料，系統就應該明確標示「無法預測」，而不是憑空產生車位數。
+
+我的建議是：不要把研究範圍限制在公有停車場。 可以把「公有＋民營路外停車場」設定為最終目標，再依照資料取得的難易程度，決定第一版納入哪些停車場。
+
+這樣你的專題會更有實用性，也更能展現 AI Agent 整合多來源資料、分析與決策的能力。
+
+* * *
+
+**You:**
+
+請依照期末專題規範，評估整合臺中市公有路外停車場與路邊停車格的資料可行性，並設計分階段的智慧停車 AI Agent。
+
+* * *
+
+**ChatGPT:**
+
+智慧停車 AI Agent：資料可行性評估與分階段設計
+
+期末專題 Proposal 規劃｜碩班－物聯網｜臺中市智慧交通應用
+
+我的建議是：將「臺中市公有路外停車場＋路邊停車格」設定為完整專題的目標範圍，但採用分階段開發，不要一開始就要求兩種資料都能進行預測。
+
+這樣既能符合老師對 Domain AI Agent 的要求，也能降低資料取得、資料清理與模型訓練的風險。
+
+整個專題的核心，不只是讓使用者看到哪裡有空位，而是回答：
+
+使用者準備前往某個目的地時，系統能否整合不同來源的停車資料，預測抵達時的車位狀況，並根據費率、距離及滿位風險，提出有數據依據的停車建議？
+
+一、專題定位與研究範圍
+
+Smart Parking AI Agent
+
+基於多源資料融合、時序預測與領域知識推理之智慧停車代理人
+
+![臺中市政府財政局-民參列管案件簡介-民間自行規劃申請參與臺中市公有停車場逢甲停87興建營運移轉投資計畫案](https://images.openai.com/static-rsc-4/Z1rirY7EP-Q8jM4B22UbeSywpsMkL0yB75qjJx9Ww702hVppoAISzhHSTye0i7O_9QHKkVKfC9PRDGPrDh9k_yU4W9XDMNIzkXJC941uB4YG8gCnCObUE4rechEONSUCdI3OKAKxs8pQY2UW7X_PSMIml79j_t8Qxmz35KdZ4YI?purpose=inline)
+
+研究對象 A：公有路外停車場
+
+例如公有平面停車場、立體停車場
+
+以停車場為分析單位，預測未來剩餘車位數及滿位風險。
+
+![中市樹木全面盤點 林市長：市府優先移植危險黑板樹－臺中觀光旅遊網 Taichung Tourism](https://images.openai.com/static-rsc-4/YSpYxPB-FuZEXx10l8ZAME1GghGacHvlm94N63p0u5mBEfqInJh7mVCwHlrM6rLJhE_yS-2LbMf8-eGLne6oBDhSo-DHDg1zW7thKVsduQ_F8LCjqqlxLspXbgGxSRbd3sZ9TKMURGdYcJeszmRH8Nqu43HEPa2vfm5Xc3_uMmk?purpose=inline)
+
+研究對象 B：路邊停車格
+
+以路段或車格群組為分析單位
+
+研究路段停車占用率、可用車格數，以及抵達時找到空位的可能性。
+
+預期應用
+
+- 即時停車資訊查詢
+- 未來 30／60 分鐘車位預測
+- 目的地周邊停車場與路段推薦
+- 停車費、距離與可用性多目標決策
+- 推薦依據、資料時間與不確定性說明
+
+建議第一版以臺中市為研究區域，先選取一個資料較完整的區域進行驗證，再逐步擴大涵蓋範圍。不要一開始就宣稱可以涵蓋全臺中市所有停車場與路邊車格。
+
+二、資料可行性評估
+
+我查核了臺中市政府資料開放平臺與交通局的相關資料集。初步結論是：兩種資料都存在，具備整合的基礎；但路外停車場的即時剩餘車位，以及兩類資料的歷史紀錄，仍須實際測試後才能確認能否用於預測。
+
+2.1 已找到的資料來源
+
+資料 A：臺中市路外剩餘車位
+
+已有公開資料
+
+來源：臺中市政府交通局
+
+已公開的資料欄位包括停車場名稱、經緯度、汽車總車位，以及汽車與機車的滿車率燈號等。該資料集的更新頻率標示為每月，但頁面另提供交通部 TDX 即時停車位 API 作為相關資料來源。
+資料.gov.tw
+
+查看政府資料集
+
+查看 TDX API 入口
+
+資料 B：臺中市路邊剩餘車位
+
+有車格狀態資料
+
+來源：臺中市政府交通局
+
+每筆資料包含路段編號、車格編號、車格種類、經緯度與狀態。狀態值包括空車格（0）、有車（1）及偵測器故障（2），更新頻率標示為每 10 分鐘。
+資料.gov.tw
+
+查看政府資料集
+
+資料 C：停車場位置與容量資訊
+
+可利用路外停車場與座標資料補足地理位置，並透過公有、民營停車場清單補充名稱、收費資訊與車格數。
+資料.gov.tw
++1
+
+路外停車場與座標 · 民營路外停車場總表
+
+2.2 各項資料能做什麼？
+
+資料項目  路外停車場  路邊停車格
+位置與識別碼  有  有
+即時車位狀態  須確認 API 與欄位  有車格狀態資料
+總車位數  有相關欄位  需由車格資料統計
+歷史時間序列  需自行確認或累積  需自行確認或累積
+未來車位預測  有條件可行  有條件可行
+滿位風險分析  有條件可行  可依區域彙總分析
+
+這裡有三個必須先解決的問題：
+
+1. 路外停車場的即時 API 是否可穩定取得精確剩餘車位數？ 公開資料中的滿車率燈號不能直接當成精確車位數；若使用 TDX，必須先確認實際回傳欄位。
+2. 路邊車格狀態是否完整？ 感測器故障或沒有回傳的車格不能直接視為空位，否則會造成錯誤預測。
+3. 是否有足夠的歷史資料？ 即時資料只能反映當下狀況。若沒有可用的歷史時間序列，就要開始定期擷取、保存並累積資料。
+
+2.3 可行性判斷
+
+項目  初步判斷  主要條件
+即時資訊地圖  高  API 可正常存取、資料能正確對應位置
+路外車位預測  中高  取得精確車位數並累積歷史資料
+路邊空位預測  中  車格狀態完整度與歷史紀錄足夠
+兩者整合推薦  中高  統一資料格式、空間距離與費率規則
+完整商用級即時導航  尚未評估  需進一步驗證資料可靠度、路線與更新延遲
+
+以上是依據公開資料欄位做出的初步技術可行性評估，不是已完成 API 壓力測試或模型實驗後的結論。
+
+三、分階段開發計畫
+
+我建議將整個系統拆成四個階段。每個階段都有可展示的成果，即使某個資料源最後無法用於預測，仍然可以完成有研究價值的系統。
+
+P1
+
+資料驗證
+
+資料蒐集與整合
+
+必要階段
+
+- 串接公有路外與路邊車位資料。
+- 建立統一停車場、車格、座標與時間格式。
+- 建立排程擷取與資料品質檢查。
+- 對每個資料源記錄更新時間、缺失率與異常狀態。
+
+交付成果： 可運作的資料管線、資料字典、初步地圖及資料品質報告。
+
+P2
+
+預測模型
+
+分別建立兩種預測模型
+
+- 路外停車場：預測剩餘車位數及滿位風險。
+- 路邊停車格：預測車格占用狀態，或彙總成路段可用車格數。
+- 比較歷史平均、Persistence、Random Forest、XGBoost。
+- 使用依時間切分的測試集，避免資料洩漏。
+
+交付成果： 可重現的訓練流程、模型比較報告與誤差分析。
+
+P3
+
+Agent 決策
+
+建立真正的 Domain AI Agent
+
+- 解析目的地、預計抵達時間與預算。
+- 選擇合適的資料來源與預測工具。
+- 整合路外停車場與路邊車格預測。
+- 根據距離、費率、可用性及預測風險排序。
+- 生成可追溯的推薦理由。
+
+交付成果： 可輸入自然語言需求、查詢資料並呼叫預測模型的 Agent。
+
+P4
+
+驗證與展示
+
+GIS 地圖與實驗評估
+
+- 顯示即時車位、預測曲線與推薦清單。
+- 比較「只看目前空位」與「使用預測後推薦」的差異。
+- 測試尖峰、離峰、假日與資料中斷情境。
+- 完成 README.md、DESIGN.md、PPT、Demo 影片與實驗報告。
+
+交付成果： 可操作的智慧停車系統與完整 Final Handover。
+
+建議的 MVP 範圍
+
+第一版不必涵蓋全臺中市。選擇一個具有足夠資料的區域，先納入：
+
+- 數個具有可靠即時剩餘車位數的路外停車場。
+- 一批狀態資料較完整的路邊車格。
+- 未來 30 分鐘的預測。
+- 基本距離、費率及滿位風險排序。
+
+等模型驗證成功後，再擴充到 60 分鐘、更多區域與更完整的使用者偏好。
+
+四、System Architecture 系統架構圖
+
+以下是可以直接放進 Proposal 的初版架構。
+
+① User / Application Layer
+
+Web UI · GIS Map · 自然語言查詢
+
+② Agent Orchestrator
+
+Intent Parsing · Task Planning · Tool Selection
+
+③ Data Connectors
+
+路外 API、路邊 API、費率、天氣
+
+④ Data Quality & Storage
+
+清理、時間戳記、資料庫、歷史紀錄
+
+⑤ Analytics & Prediction Engine
+
+路外車位預測 · 路邊占用預測 · 滿位機率
+
+⑥ Domain Knowledge & Decision Engine
+
+容量限制 · 收費規則 · 距離 · 使用者偏好 · 不確定性
+
+⑦ Recommendation Agent
+
+候選篩選、排序、理由生成、例外處理
+
+⑧ Output & Evaluation
+
+地圖、推薦清單、預測曲線、實驗指標與資料來源
+
+八個模組的責任
+
+編號  模組  負責工作
+①  使用者介面  輸入目的地、時間、預算與步行限制
+②  Agent Orchestrator  判斷意圖、拆解任務、呼叫工具
+③  Data Connectors  取得即時停車、位置、費率及天氣資料
+④  Data Quality & Storage  清理、儲存、追蹤資料新鮮度
+⑤  Prediction Engine  執行已訓練的模型並估算未來車位
+⑥  Domain Decision Engine  套用容量、收費與距離等規則
+⑦  Recommendation Agent  排序候選方案、產生推薦理由
+⑧  Output & Evaluation  呈現結果、記錄預測與實際值以供評估
+
+這種設計可以清楚對應老師的八步驟要求，而且將 LLM 的任務規劃與可重現的數值預測分開。即使未來更換模型，也不必重新開發整個 Agent。
+
+五、Flowchart 流程圖
+
+此流程涵蓋使用者查詢、資料檢查、預測、決策、例外處理與回饋紀錄。
+
+Mermaid 圖表
+
+使用者輸入需求
+
+解析目的地、時間、預算
+
+查詢附近停車場與路邊車格
+
+資料是否可用且足夠新？
+
+標示資料過期或不可用
+
+是否有其他可用候選？
+
+回覆限制並提供替代查詢
+
+排除不可用資料
+
+清理資料並建立特徵
+
+呼叫對應的預測模型
+
+預測車位數與滿位風險
+
+套用容量、費率、距離規則
+
+依使用者偏好排序
+
+產生推薦與證據說明
+
+顯示地圖、預測與資料時間
+
+保存預測紀錄供後續驗證
+
+結束
+
+否
+
+否
+
+是
+
+是
+
+關鍵設計決策
+
+- 資料過期： 不可直接把舊資料當作目前狀態；依更新時間與預先定義的有效期限判斷。
+- 感測器故障： 路邊車格狀態為故障時，不計入確定的空位數。
+- 模型不可用： 可以回傳即時資料及簡單基準估計，但必須標示為基準估計，而不是正式模型預測。
+- 候選皆不符合： 回報原因，請使用者調整預算、步行距離或抵達時間。
+- 結果可驗證： 保存預測當下的資料版本、預測值、模型版本及目標時間，供事後比較。
+
+六、Pseudocode 核心演算法
+
+以下演算法可以放入 Proposal 的 Proposed Scheme。它是系統設計的偽程式碼，並非宣稱已經完成實驗的程式。
+
+Python
+執行
+
+Algorithm 1: Smart Parking AI Agent
+
+Input:
+    Q: User query
+    T: Prediction horizons (30, 60 minutes)
+    D: Parking data sources
+Output:
+    R: Ranked parking recommendations
+
+01:  Parse Q into destination, arrival time,
+        budget, walking limit, and preferences
+02:  C <- Find nearby off-street lots and curb sections
+03:  C <- Filter candidates by distance and basic constraints
+04:  For each candidate c in C:
+05:      d <- Fetch latest observation from D
+06:      If d is missing, stale, or invalid:
+07:          Mark c as data-unavailable or low-confidence
+08:          Continue with other candidates
+09:      End If
+10:      x <- Load historical data and construct features
+11:      If a validated prediction model is available:
+12:          y <- Predict availability for each horizon in T
+13:      Else:
+14:          y <- Apply a documented baseline or mark unknown
+15:      End If
+16:      Apply capacity constraints and domain rules to y
+17:      Estimate availability risk and uncertainty
+18:  End For
+19:  C_valid <- Candidates with usable evidence
+20:  If C_valid is empty:
+21:      Return an explanation and alternative search options
+22:  End If
+23:  R <- Rank C_valid by availability, cost, distance,
+        and user preferences
+24:  Attach evidence, data timestamps, and limitations to R
+25:  Display map, predictions, and ranked recommendations
+26:  Log predictions for later evaluation against observations
+27:  Return R
+
+
+這裡的第 23 行可以先使用明確的加權評分規則，而不是讓 LLM 自行決定分數。例如將距離、預估費用、可用車位及滿位風險標準化後，再依使用者偏好設定權重。
+
+不過，「可用車位多」不一定等於「最適合使用者」。對預算敏感的使用者，費率權重應較高；對時間敏感的使用者，距離與滿位風險可能更重要。這就是 Domain Knowledge 與 Agent 決策的價值。
+
+七、Domain Knowledge：專題不能只靠模型
+
+老師特別要求領域知識，因此建議你在系統中明確定義以下規則。
+
+領域知識  規則或意義  對系統的影響
+停車容量  剩餘車位不能小於 0，也不能大於總容量  預測值需合理化
+車格狀態  故障、未知與空位是不同狀態  避免高估空位
+時間週期  平日、假日、尖峰與離峰需求可能不同  建立時間特徵
+空間關係  鄰近路段與停車場可能存在共同需求  加入空間特徵
+收費制度  每小時費率、計費單位及上限影響實際成本  估算預計停車費
+資料不確定性  即時資訊與預測都可能有誤差  顯示信心與資料時間
+
+需要注意：這些是待驗證的領域假設，不應直接當成臺中市所有停車場都成立的事實。例如尖峰時段是否固定、附近停車場之間是否存在替代關係，都應透過資料分析驗證。
+
+八、實驗設計與評估指標
+
+預測系統必須有客觀證據證明有效，否則只能算是資訊整合 Demo。
+
+8.1 模型比較
+
+實驗組  方法  要回答的問題
+Baseline 1  Persistence：未來值等於最新觀測值  複雜模型是否真的更好？
+Baseline 2  同星期、同時段歷史平均  是否存在穩定的時間週期？
+Model 1  Random Forest  非線性特徵是否有幫助？
+Model 2  XGBoost  梯度提升模型能否改善預測？
+Ablation  移除天氣或時間特徵  各類特徵的實際貢獻為何？
+
+2025–2026 年的研究已探討路外停車場的多源資料預測，以及路邊停車的時空特徵融合。這表示「預測車位」本身並非全新的研究方向；你的創新需要建立在臺中在地資料、兩類停車資源整合，以及可解釋的決策流程上。
+ScienceDirect
++2
+
+8.2 Evaluation Metrics
+
+車位數預測：MAE、RMSE
+
+$$\operatorname{MAE}=\frac{1}{n}\sum_{i=1}^{n}|y_i-\hat y_i|$$
+
+MAE 可直接解讀為平均預測誤差幾個車位；RMSE 則對較大的預測錯誤給予較高懲罰。
+
+滿位風險分類：Precision、Recall、F1-score
+
+衡量系統是否能正確識別接近滿位或已滿位的情況。滿位門檻應事先定義，並依資料特性調整。
+
+推薦品質：Top-k 命中率與成本比較
+
+比較推薦清單中實際有空位的比例、預估費用與距離。若沒有可靠的實際抵達時間或使用者行為資料，應先將這些視為離線模擬指標，而不是宣稱已降低實際尋位時間。
+
+8.3 必須避免的實驗錯誤
+
+1. 依時間切分訓練、驗證與測試資料。
+2. 不得使用預測時間之後才知道的資料作為輸入特徵。
+3. 不應將感測器故障誤當成空位或占用。
+4. 路外停車場與路邊車格應分別評估，再評估整合系統。
+5. 模型的所有預測結果都要與實際觀測值比較，不能只展示看起來合理的案例。
+
+九、Related Work：如何建立研究缺口
+
+老師要求約一半 AI Technology、一半 Domain Know-how。以下先列出可作為正式文獻回顧起點的 2025–2026 年研究；撰寫正式 Proposal 時，仍應下載原文核對實驗細節、資料集與限制。
+
+文獻  研究方法與方向  對本專題的啟發
+Kuang et al., 2025，Advanced Engineering Informatics ScienceDirect  結合時空資訊、異質資料與即時天氣，研究區域停車占用率預測  可研究天氣與鄰近區域特徵的額外價值
+Leveraging multisource data for off-street parking occupancy prediction, 2026 ScienceDirect  整合停車、交通、公共運輸與天氣資訊，研究多個路外停車場的短期及長期預測  可參考多源資料融合與不同預測時間尺度的實驗設計
+An attention-based dynamic graph model for on-street parking availability prediction, 2025 ScienceDirect  利用動態圖與注意力機制分析路邊停車的時空關係  可作為路邊車格具有空間關聯性的研究依據
+Statistical modelling of on-street parking spot occupancy in smart cities, 2025 Oxford Academic  使用時間到事件模型與半馬可夫過程研究路邊車格占用  提醒我們不一定只能使用深度學習，也可研究占用狀態轉換
+
+建議歸納的 Research Gap
+
+Existing Research
+
+已有研究分別探討路外停車場占用率、路邊車格占用預測，以及多源資料與時空模型。
+
+Potential Gap
+
+在本專題的使用情境下，需要驗證如何將不同粒度的資料（停車場層級與車格／路段層級）整合為一致的決策流程，並兼顧資料品質、預測不確定性與使用者偏好。
+
+Our Project
+
+建立臺中市智慧停車 AI Agent，整合路外與路邊資料，分別預測車位狀況，再以統一的決策引擎提供可解釋的推薦，透過基準模型與推薦實驗驗證其價值。
+
+這個 Research Gap 目前是研究假設，正式提交前應再檢索臺灣在地研究、政府既有系統及其他停車推薦平台，避免將已存在的功能誤認為創新。
+
+十、與 CRISP-DM 的對應
+
+如果你想讓整份專題更有研究方法上的完整性，可以用 CRISP-DM 管理整個開發流程。
+
+CRISP-DM 階段  本專題對應工作
+Business Understanding  定義找車位困難、使用者需求與研究目標
+Data Understanding  檢查 API、欄位、更新頻率、缺失與故障資料
+Data Preparation  時間對齊、清理、特徵工程、建立預測標籤
+Modeling  建立基準模型、Random Forest、XGBoost
+Evaluation  時間序列測試、模型比較、推薦品質評估
+Deployment  部署 Agent、GIS 地圖、API 與監控紀錄
+
+CRISP-DM 是整個專案的資料探勘方法論；AI Agent Architecture 則是實際執行查詢、資料取得、模型推論與決策的系統架構。兩者可以互相配合，不需要二選一。
+
+十一、GitHub 與 DESIGN.md 建議
+
+你可以從 Proposal 階段就建立下列 Repository 結構：
+
+smart-parking-ai-agent/
+├── README.md
+├── DESIGN.md
+├── proposal/
+│   ├── proposal.md
+│   └── references.bib
+├── data/
+│   ├── samples/
+│   └── README.md
+├── src/
+│   ├── connectors/
+│   ├── ingestion/
+│   ├── preprocessing/
+│   ├── prediction/
+│   ├── domain_rules/
+│   ├── agent/
+│   └── recommendation/
+├── frontend/
+├── experiments/
+│   ├── baselines/
+│   ├── evaluation/
+│   └── results/
+├── tests/
+└── docs/
+    ├── architecture.md
+    └── flowchart.md
+
+建議不要直接把所有擷取的原始資料提交到 GitHub。可以在 data/README.md 說明資料來源、取得方式、更新時間、授權與欄位；少量範例資料則應先確認符合授權及隱私要求。
+
+DESIGN.md 至少應記錄：
+
+- Problem Statement 與 Functional Requirements
+- System Architecture 與元件責任
+- API、資料欄位與資料更新策略
+- Prediction Models、Domain Knowledge 與演算法
+- Agent 的工具呼叫與例外處理
+- 實驗設計、評估指標與結果
+- Installation、How to Run、Limitations 與 Future Work
+
+十二、最後的執行優先順序
+
+專題執行檢查表
+
+0/6 項
+
+[ ]
+
+確認兩類資料 API 的實際回傳內容
+
+確認剩餘車位欄位、狀態定義、更新時間及存取限制。
+
+[ ]
+
+建立定期擷取與歷史資料庫
+
+保存時間戳記、來源、原始狀態與清理後資料。
+
+[ ]
+
+進行資料品質分析
+
+檢查缺失率、故障率、更新延遲、車位變化與可用樣本數。
+
+[ ]
+
+完成基準模型與研究問題
+
+先驗證 Persistence 和歷史平均，再決定是否需要更複雜的模型。
+
+[ ]
+
+實作 Agent、推薦與 GIS
+
+串接預測模型與決策規則，完成可展示的端到端流程。
+
+[ ]
+
+完成 Proposal、PPT、GitHub 與 DESIGN.md
+
+讓設計、實驗、限制及交付方式都有明確文件。
+
+總結：這個題目適合發展成完整的期末專題。 我建議先把路外停車場與路邊車格的資料管線都納入設計，但將模型分開訓練、分開驗證，最後才透過 Agent 的決策引擎整合。如此即使兩類資料的品質與粒度不同，也能逐步完成一個有實驗、有系統架構、有領域知識，並且能說明推薦依據的智慧停車系統。
+
+如果你願意，我可以：
+
+- 繼續展示智慧停車AI Agent的預算及步行限制策略細節
+- 補充智慧停車系統中異常資料與感測器錯誤處理方法
+- 詳述路外停車場與路邊車格資料融合的決策與挑戰

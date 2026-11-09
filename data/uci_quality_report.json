@@ -1,0 +1,343 @@
+{
+  "source": "data\\historical\\parking_birmingham\\dataset.csv",
+  "rows": 35717,
+  "columns": [
+    "SystemCodeNumber",
+    "Capacity",
+    "Occupancy",
+    "LastUpdated"
+  ],
+  "facilities": 30,
+  "missing_cells": 0,
+  "exact_duplicate_rows": 216,
+  "date_start": "2016-10-04 07:46:28",
+  "date_end": "2016-12-19 16:30:35",
+  "facility_row_range": [
+    88,
+    1312
+  ],
+  "gap_minutes_over_30": {
+    "31": 212,
+    "32": 3558,
+    "33": 8602,
+    "34": 3138,
+    "35": 10,
+    "36": 61,
+    "37": 162,
+    "38": 30,
+    "39": 187,
+    "40": 239,
+    "41": 31,
+    "42": 6,
+    "43": 4,
+    "44": 1,
+    "45": 1,
+    "46": 19,
+    "47": 17,
+    "49": 1,
+    "50": 14,
+    "52": 4,
+    "53": 34,
+    "54": 6,
+    "56": 4,
+    "57": 3,
+    "59": 27,
+    "60": 67,
+    "66": 3,
+    "67": 1,
+    "70": 7,
+    "73": 1,
+    "74": 1,
+    "79": 2,
+    "81": 1,
+    "83": 3,
+    "86": 2,
+    "87": 1,
+    "93": 1,
+    "94": 1,
+    "100": 1,
+    "105": 1,
+    "133": 1,
+    "900": 3,
+    "903": 2,
+    "906": 1,
+    "909": 1,
+    "910": 6,
+    "913": 6,
+    "914": 2,
+    "916": 2,
+    "917": 2,
+    "918": 1,
+    "919": 4,
+    "920": 10,
+    "921": 1,
+    "923": 37,
+    "925": 28,
+    "926": 183,
+    "927": 227,
+    "929": 205,
+    "930": 375,
+    "933": 333,
+    "934": 195,
+    "936": 66,
+    "937": 80,
+    "940": 28,
+    "943": 2,
+    "950": 28,
+    "953": 1,
+    "954": 1,
+    "959": 1,
+    "960": 3,
+    "963": 1,
+    "964": 1,
+    "973": 2,
+    "974": 1,
+    "984": 1,
+    "986": 1,
+    "987": 25,
+    "993": 1,
+    "994": 1,
+    "997": 1,
+    "1019": 1,
+    "2353": 2,
+    "2357": 1,
+    "2359": 1,
+    "2363": 1,
+    "2366": 1,
+    "2367": 1,
+    "2369": 1,
+    "2370": 2,
+    "2373": 2,
+    "2374": 2,
+    "3801": 1,
+    "3803": 2,
+    "3806": 2,
+    "3807": 2,
+    "3809": 23,
+    "3810": 2,
+    "3813": 1,
+    "3814": 26,
+    "3821": 1,
+    "3836": 1,
+    "5243": 2,
+    "5250": 2,
+    "6691": 1,
+    "11012": 4,
+    "11067": 1,
+    "13891": 1,
+    "13894": 1,
+    "13908": 1
+  },
+  "per_facility": {
+    "BHMBCCMKT01": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "BHMBCCPST01": {
+      "rows": 1276,
+      "unique_timestamps": 1271,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 654
+    },
+    "BHMBCCSNH01": {
+      "rows": 1294,
+      "unique_timestamps": 1289,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 665
+    },
+    "BHMBCCTHL01": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "BHMBRCBRG01": {
+      "rows": 1186,
+      "unique_timestamps": 1179,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 614
+    },
+    "BHMBRCBRG02": {
+      "rows": 1186,
+      "unique_timestamps": 1180,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 610
+    },
+    "BHMBRCBRG03": {
+      "rows": 1186,
+      "unique_timestamps": 1180,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 611
+    },
+    "BHMBRTARC01": {
+      "rows": 88,
+      "unique_timestamps": 88,
+      "start": "2016-12-13 08:02:51",
+      "end": "2016-12-18 16:30:25",
+      "gaps_over_30_minutes": 46
+    },
+    "BHMEURBRD01": {
+      "rows": 1312,
+      "unique_timestamps": 1306,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 675
+    },
+    "BHMEURBRD02": {
+      "rows": 1276,
+      "unique_timestamps": 1270,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 660
+    },
+    "BHMMBMMBX01": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "BHMNCPHST01": {
+      "rows": 1312,
+      "unique_timestamps": 1301,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 682
+    },
+    "BHMNCPLDH01": {
+      "rows": 1292,
+      "unique_timestamps": 1281,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 667
+    },
+    "BHMNCPNHS01": {
+      "rows": 1038,
+      "unique_timestamps": 1028,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 545
+    },
+    "BHMNCPNST01": {
+      "rows": 1312,
+      "unique_timestamps": 1299,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 686
+    },
+    "BHMNCPPLS01": {
+      "rows": 1291,
+      "unique_timestamps": 1253,
+      "start": "2016-10-04 07:46:28",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 681
+    },
+    "BHMNCPRAN01": {
+      "rows": 1186,
+      "unique_timestamps": 1174,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 615
+    },
+    "Broad Street": {
+      "rows": 1312,
+      "unique_timestamps": 1306,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 676
+    },
+    "Bull Ring": {
+      "rows": 1186,
+      "unique_timestamps": 1180,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 609
+    },
+    "NIA Car Parks": {
+      "rows": 1204,
+      "unique_timestamps": 1199,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-16 16:30:12",
+      "gaps_over_30_minutes": 620
+    },
+    "NIA North": {
+      "rows": 162,
+      "unique_timestamps": 159,
+      "start": "2016-10-16 08:01:13",
+      "end": "2016-11-30 16:28:40",
+      "gaps_over_30_minutes": 82
+    },
+    "NIA South": {
+      "rows": 1204,
+      "unique_timestamps": 1199,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-16 16:30:12",
+      "gaps_over_30_minutes": 620
+    },
+    "Others-CCCPS105a": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Others-CCCPS119a": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Others-CCCPS133": {
+      "rows": 1294,
+      "unique_timestamps": 1289,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 665
+    },
+    "Others-CCCPS135a": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Others-CCCPS202": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Others-CCCPS8": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Others-CCCPS98": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    },
+    "Shopping": {
+      "rows": 1312,
+      "unique_timestamps": 1307,
+      "start": "2016-10-04 07:59:42",
+      "end": "2016-12-19 16:30:35",
+      "gaps_over_30_minutes": 674
+    }
+  }
+}

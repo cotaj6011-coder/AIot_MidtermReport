@@ -1,0 +1,10 @@
+[project]
+name = "smart-parking-agent"
+version = "0.1.0"
+description = "Reproducible proposal prototype for parking availability prediction and recommendation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
